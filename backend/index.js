@@ -2,7 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./config/db');
-const path = require('path'); // --- NEW: Import path module
+const path = require('path');
 
 // Load env vars
 dotenv.config();
@@ -18,18 +18,17 @@ app.use(express.json());
 // Enable CORS
 app.use(cors());
 
-// Mount routers (Your API)
+// Mount routers
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/menu', require('./routes/menu'));
 app.use('/api/orders', require('./routes/orders'));
 
-// --- NEW: Serve Frontend Static Files ---
-// This tells Express to serve the files from your 'frontend' folder
+// Serve Frontend Static Files
 app.use(express.static(path.join(__dirname, '../frontend')));
 
-// --- NEW: Catch-all Route ---
-// Any request that isn't an API call will return the index.html
-app.get('*', (req, res) => {
+// --- NEW: Safer Catch-all Route ---
+// We changed this from app.get('*') to app.use() to prevent the crash
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, '../frontend', 'index.html'));
 });
 
