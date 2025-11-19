@@ -3,21 +3,16 @@
   "builds": [
     {
       "src": "backend/index.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "frontend",
-      "use": "@vercel/static"
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["frontend/**"]
+      }
     }
   ],
   "rewrites": [
     {
-      "source": "/api/(.*)",
-      "destination": "/backend/index.js"
-    },
-    {
       "source": "/(.*)",
-      "destination": "/frontend/$1"
+      "destination": "/backend/index.js"
     }
   ]
 }
