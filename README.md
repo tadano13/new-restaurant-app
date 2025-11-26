@@ -76,7 +76,9 @@ Ensure you have the following installed:
 ### **Installation**
 
 1. **Clone the repository:**
-   ```git clone \[https://github.com/tadano13/new-restaurant-app.git\](https://github.com/tadano13/new-restaurant-app.git)```
+   ```
+   git clone \[https://github.com/tadano13/new-restaurant-app.git\](https://github.com/tadano13/new-restaurant-app.git)
+   ```
 
    *Alternatively, you can download the ZIP file by clicking the green "Code" button on GitHub and selecting "Download ZIP".*  
 3. **Navigate to the project directory:**  
