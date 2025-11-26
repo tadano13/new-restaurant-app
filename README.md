@@ -118,8 +118,7 @@ Ensure you have the following installed:
 | :---- | :---- | :---- |
 | GET | /api/products | Fetch all available dishes |
 | POST | /api/orders | Create a new order |
-| POST | /api/auth/login | User login |
-| POST | /api/auth/register | User registration |
+| POST | /api/auth/login | Admin Login |
 
 *(Update this table with your actual API routes found in the backend folder)*
 
