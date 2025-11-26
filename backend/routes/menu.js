@@ -19,7 +19,6 @@ router.get('/', async (req, res) => {
 // @route   POST /api/menu
 // @access  Private/Admin
 router.post('/', protect, async (req, res) => {
-  // In a real app, you'd add more to the admin panel to do this
   try {
     const { name, description, price, category, icon } = req.body;
     const newItem = new MenuItem({
@@ -35,5 +34,6 @@ router.post('/', protect, async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
+
 
 module.exports = router;
