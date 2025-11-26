@@ -144,7 +144,7 @@ Ensure you have the following installed:
 
 This project is configured for deployment on **Vercel**.
 
-1. Ensure your vercel.json (or vercel.js) is configured correctly to handle both frontend and backend builds.  
+1. Ensure your `vercel.json` is configured correctly to handle both frontend and backend builds.  
 2. Push your changes to GitHub.  
 3. Connect your repository to Vercel and deploy\!
 
