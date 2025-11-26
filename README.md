@@ -82,9 +82,9 @@ Ensure you have the following installed:
 
    *Alternatively, you can download the ZIP file by clicking the green "Code" button on GitHub and selecting "Download ZIP".*  
 2. **Navigate to the project directory:**  
-```
+   ```
    cd new-restaurant-app
-```
+   ```
 
 ### **Backend Setup**
 
@@ -99,25 +99,35 @@ Ensure you have the following installed:
    ```
 
 3. **Environment Variables:** Create a .env file in the backend folder and add your configuration (e.g., Database URI, PORT).  
+  ```
    PORT=5000  
    DB\_URI=your\_database\_connection\_string
+  ```
 
-4. Start the server:  
+5. Start the server:  
+  ```
    npm start  
    \# or for development with nodemon  
    npm run dev
+  ```
 
 ### **Frontend Setup**
 
 1. Open a new terminal and navigate to the frontend directory:  
+  ```
    cd frontend
+  ```
 
-2. Install dependencies:  
+3. Install dependencies:  
+  ```
    npm install
+  ```
 
-3. Start the client:  
+5. Start the client:  
+  ```
    npm start  
-   \# or open index.html depending on your setup
+   open and run index.html 
+  ```
 
 ## **🔌 API Endpoints**
 
