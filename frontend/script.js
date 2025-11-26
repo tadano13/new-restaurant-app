@@ -1,12 +1,7 @@
-// --- NEW: API Configuration ---
-const API_URL = ''; // Your backend server address
 
-// --- Global variables ---
+const API_URL = '';
+
 let cart = [];
-// let orderIdCounter = 1; // No longer needed, DB handles IDs
-// let orders = { pending: [], completed: [] }; // No longer needed, fetched from DB
-
-// --- Helper to get admin token ---
 function getAdminToken() {
   return localStorage.getItem('adminToken');
 }
@@ -29,11 +24,11 @@ async function adminLogin() {
     }
     
     const data = await res.json();
-    localStorage.setItem('adminToken', data.token); // Save token
+    localStorage.setItem('adminToken', data.token); 
     
     document.getElementById('login-page').style.display = 'none';
     document.getElementById('admin-panel').style.display = 'block';
-    updateOrderLists(); // Fetch orders from DB
+    updateOrderLists(); 
     
   } catch (error) {
     console.error('Login error:', error);
@@ -52,21 +47,18 @@ function backToLogin() {
   document.getElementById('login-page').style.display = 'flex';
 }
 
-// --- Menu navigation ---
+
 function showMenu() {
   document.getElementById('welcome-page').style.display = 'none';
   document.getElementById('menu-page').style.display = 'block';
-  // Load menu when shown
   loadMenuItems();
 }
 
-// --- NEW: Load Menu from API ---
 async function loadMenuItems() {
   try {
     const res = await fetch(`${API_URL}/api/menu`);
     const items = await res.json();
     
-    // Get containers
     const containers = {
       Appetizers: document.querySelector('#category1 .menu-items'),
       'Main Course': document.querySelector('#category2 .menu-items'),
@@ -74,10 +66,8 @@ async function loadMenuItems() {
       Beverages: document.querySelector('#category4 .menu-items'),
     };
     
-    // Clear existing (hardcoded) items
     Object.values(containers).forEach(c => c.innerHTML = '');
     
-    // Populate menu from DB
     items.forEach(item => {
       const container = containers[item.category];
       if (container) {
@@ -94,8 +84,6 @@ async function loadMenuItems() {
         container.appendChild(menuItem);
       }
     });
-    
-    // Re-attach event listeners to new buttons
     attachAddToCartListeners();
     
   } catch (error) {
@@ -103,9 +91,8 @@ async function loadMenuItems() {
   }
 }
 
-// --- Tab functionality ---
 document.addEventListener('DOMContentLoaded', () => {
-  // Menu tabs
+ 
   const tabs = document.querySelectorAll('.category-tab');
   const sections = document.querySelectorAll('.menu-section');
   
@@ -123,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
-  // Admin tabs
+ 
   const adminTabs = document.querySelectorAll('.admin-tab');
   const adminSections = document.querySelectorAll('.admin-section');
   
@@ -140,19 +127,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
-  // Attach cart listeners (will be re-attached after menu loads)
+
   attachAddToCartListeners();
 });
 
-// Helper to attach listeners
+
 function attachAddToCartListeners() {
   const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
   addToCartButtons.forEach(button => {
-    // Remove old listener to prevent duplicates
+    
     button.replaceWith(button.cloneNode(true));
   });
   
-  // Add new listeners
+
   document.querySelectorAll('.add-to-cart-btn').forEach(button => {
     button.addEventListener('click', () => {
       const id = button.getAttribute('data-id');
@@ -163,7 +150,7 @@ function attachAddToCartListeners() {
   });
 }
 
-// --- Cart functions ---
+
 function addToCart(id, name, price) {
   const existingItem = cart.find(item => item.id === id);
   
@@ -287,7 +274,7 @@ async function placeOrder() {
   
   const order = {
     tableNumber: tableNumber,
-    items: cart, // cart format matches what our backend needs
+    items: cart, 
     total: cart.reduce((total, item) => total + (item.price * item.quantity), 0),
   };
   
@@ -304,12 +291,12 @@ async function placeOrder() {
     
     const createdOrder = await res.json();
     
-    // Show confirmation
+
     document.getElementById('menu-page').style.display = 'none';
     document.getElementById('order-confirmation').style.display = 'flex';
-    document.getElementById('order-id-display').textContent = `Order ID: ${createdOrder._id}`; // Use DB ID
+    document.getElementById('order-id-display').textContent = `Order ID: ${createdOrder._id}`;
     
-    // Clear cart
+  
     cart = [];
     updateCartCount();
     closeCart();
@@ -475,10 +462,11 @@ async function deleteOrder(orderId) {
       throw new Error('Failed to delete order');
     }
     
-    updateOrderLists(); // Refresh both lists
+    updateOrderLists(); 
     
   } catch (error) {
     console.error('Error deleting order:', error);
     alert('Failed to delete order.');
   }
+
 }
