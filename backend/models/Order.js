@@ -7,7 +7,7 @@ const OrderSchema = new mongoose.Schema({
   },
   items: [
     {
-      id: { type: String }, // Storing the original menu item ID
+      id: { type: String }, 
       name: { type: String },
       price: { type: Number },
       quantity: { type: Number },
@@ -28,5 +28,6 @@ const OrderSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
+
 
 module.exports = mongoose.model('Order', OrderSchema);
