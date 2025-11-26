@@ -11,15 +11,14 @@ A full-stack web application designed for restaurant management and food orderin
 This application simulates a complete digital ecosystem for a restaurant.
 
 * **For Customers:** It allows users to browse a dynamic menu, view item details, add items to a cart, and complete a checkout process.  
-* **For Admins:** It provides a dashboard to manage menu items, update prices, and view incoming orders.
+* **For Admins:** It provides a dashboard to manage orders like either accepting and completed or be deleted.
 
 ## **✨ Features**
 
 * **User Interface:** Clean and responsive design for browsing menus and placing orders.  
-* **Admin Dashboard:** Manage dishes, prices, and incoming orders.  
-* **Authentication:** User login and registration functionality.  
+* **Admin Dashboard:** Manage dishes, prices, and incoming orders.   
 * **Cart Management:** Add, remove, and modify items in the cart.  
-* **Real-time Updates:** (Optional: Add if applicable, e.g., using Socket.io)
+* **Real-time Updates:** 
 
 ## **🛠 Tech Stack**
 
@@ -27,13 +26,12 @@ This application simulates a complete digital ecosystem for a restaurant.
 
 * HTML5, CSS3  
 * JavaScript (ES6+)  
-* *Framework:* (e.g., React.js / Vue.js / Vanilla JS \- *Update based on your code*)
 
 **Backend:**
 
 * Node.js  
 * Express.js  
-* *Database:* (e.g., MongoDB / PostgreSQL / Firebase \- *Update based on your code*)
+* *Database:* (e.g., MongoDB)
 
 **Deployment:**
 
