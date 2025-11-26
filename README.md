@@ -81,16 +81,22 @@ Ensure you have the following installed:
    ```
 
    *Alternatively, you can download the ZIP file by clicking the green "Code" button on GitHub and selecting "Download ZIP".*  
-3. **Navigate to the project directory:**  
+2. **Navigate to the project directory:**  
+```
    cd new-restaurant-app
+```
 
 ### **Backend Setup**
 
 1. Navigate to the backend directory:  
+   ```
    cd backend
+   ```
 
 2. Install dependencies:  
+   ```
    npm install
+   ```
 
 3. **Environment Variables:** Create a .env file in the backend folder and add your configuration (e.g., Database URI, PORT).  
    PORT=5000  
