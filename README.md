@@ -13,21 +13,6 @@ This application simulates a complete digital ecosystem for a restaurant.
 * **For Customers:** It allows users to browse a dynamic menu, view item details, add items to a cart, and complete a checkout process.  
 * **For Admins:** It provides a dashboard to manage menu items, update prices, and view incoming orders.
 
-## **📑 Table of Contents**
-
-* [Features](https://www.google.com/search?q=%23-features)  
-* [Tech Stack](https://www.google.com/search?q=%23-tech-stack)  
-* [Project Structure](https://www.google.com/search?q=%23-project-structure)  
-* [Getting Started](https://www.google.com/search?q=%23-getting-started)  
-  * [Prerequisites](https://www.google.com/search?q=%23prerequisites)  
-  * [Installation](https://www.google.com/search?q=%23installation)  
-  * [Backend Setup](https://www.google.com/search?q=%23backend-setup)  
-  * [Frontend Setup](https://www.google.com/search?q=%23frontend-setup)  
-* [API Endpoints](https://www.google.com/search?q=%23-api-endpoints)  
-* [Deployment](https://www.google.com/search?q=%23-deployment)  
-* [Contributing](https://www.google.com/search?q=%23-contributing)  
-* [Contact & Customization](https://www.google.com/search?q=%23-contact--customization)
-
 ## **✨ Features**
 
 * **User Interface:** Clean and responsive design for browsing menus and placing orders.  
