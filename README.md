@@ -153,9 +153,9 @@ This project is configured for deployment on **Vercel**.
 Contributions are welcome\! Please follow these steps:
 
 1. Fork the repository.  
-2. Create a new branch (git checkout \-b feature/YourFeature).  
-3. Commit your changes (git commit \-m 'Add some feature').  
-4. Push to the branch (git push origin feature/YourFeature).  
+2. Create a new branch `(git checkout \-b feature/YourFeature).`  
+3. Commit your changes `(git commit \-m 'Add some feature').` 
+4. Push to the branch `(git push origin feature/YourFeature). ` 
 5. Open a Pull Request.
 
 ## **💼 Contact & Customization**
@@ -168,7 +168,7 @@ As mentioned, this repository serves as a demo. If you are looking for a **compl
 * 🛠️ **Custom Development:** I can customize this project to fit your specific restaurant branding and requirements.
 
 Contact me directly to discuss your needs\!  
-(Add your email, LinkedIn, or Website link here)
+(nishantsawaimoon282@gmail.com, https://portfolio-website-by-nish-86.vercel.app/)
 
 ## **📝 License**
 
