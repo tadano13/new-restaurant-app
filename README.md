@@ -55,13 +55,13 @@ This application simulates a complete digital ecosystem for a restaurant.
 * Vercel
 
 ## **📂 Project Structure**
-
+```
 new-restaurant-app/  
 ├── backend/          \# Server-side logic, API routes, and database models  
 ├── frontend/         \# Client-side code, pages, and components  
 ├── vercel.js         \# Vercel deployment configuration  
 └── README.md         \# Project documentation
-
+```
 ## **🚀 Getting Started**
 
 Follow these instructions to get a copy of the project up and running on your local machine.
