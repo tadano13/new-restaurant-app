@@ -18,11 +18,11 @@ const MenuItemSchema = new mongoose.Schema({
     required: true,
     enum: ['Appetizers', 'Main Course', 'Desserts', 'Beverages'],
   },
-  // We can add an emoji/icon field here to match your frontend
   icon: {
     type: String,
     default: 'fas fa-utensils',
   }
 });
+
 
 module.exports = mongoose.model('MenuItem', MenuItemSchema); 
