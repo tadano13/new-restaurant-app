@@ -31,7 +31,7 @@ This application simulates a complete digital ecosystem for a restaurant.
 
 * Node.js  
 * Express.js  
-* *Database:* (e.g., MongoDB)
+* *Database:* Mongodb
 
 **Deployment:**
 
