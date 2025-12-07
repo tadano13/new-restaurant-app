@@ -11,7 +11,7 @@ A full-stack web application designed for restaurant management and food orderin
 This application simulates a complete digital ecosystem for a restaurant.
 
 * **For Customers:** It allows users to browse a dynamic menu, view item details, add items to a cart, and complete a checkout process.  
-* **For Admins:** It provides a dashboard to manage orders like either accepting and completed or be deleted.
+* **For Admins:** It provides a dashboard to manage orders like either accepting and completed or be deleted ( id and password to check admin pannel is id = admin and password = admin.
 
 ## **✨ Features**
 
