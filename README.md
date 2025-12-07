@@ -120,8 +120,6 @@ Ensure you have the following installed:
 | POST | /api/orders | Create a new order |
 | POST | /api/auth/login | Admin Login |
 
-*(Update this table with your actual API routes found in the backend folder)*
-
 ## **🤝 Contributing**
 
 Contributions are welcome\! Please follow these steps:
